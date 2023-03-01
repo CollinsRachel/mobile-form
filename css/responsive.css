@@ -15,7 +15,7 @@
         flex-direction: column;
     }
 
-    .section:first-child, .section:last-child, .section:nth-last-child(){
+    .section:first-child, .section:last-child{
             display: grid;
             grid-template-columns: 10% 90%;
             column-gap: 0.25rem; 
