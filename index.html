@@ -26,21 +26,20 @@
     </div>
     <!--article/form-->
     <article>
-        <div class="section">
+        <!--name-->
+        <div class="section-name">
             <label for="name">
                 <i class="fas">&#xf406;</i>
             </label>
-            <!--input type "text"-->
             <input id="name" name="Name" type="text" placeholder="Name">
         </div>
         <br>
         <br>
-        <div class="section">
-            <!--label "telephone"-->
+        <!--telephone-->
+        <div class="section-phone">
             <label for="phone">
                 <i class="fa">&#xf095;</i>
             </label>
-            <!--input type "tel"-->
             <input id="phone" type="tel" placeholder="Phone Number" maxlength="10">
             <select aria-label="phonetype">
                 <option value="label">Label</option>
@@ -51,8 +50,8 @@
         </div>
         <br>
         <br>
-        <div class="section">
-            <!--label, address-->
+        <!--address-->
+        <div class="section-address">
             <label for="address">
                 <i class="fas">&#xf3c5;</i>
             </label>
@@ -60,15 +59,17 @@
         </div>
         <br>
         <br>
-        <div class="section">
+        <!--city-->
+        <div class="section-city">
             <label for="city"></label>
             <input type="text" id="city" placeholder="City">
         </div>
         <br>
         <br>
-        <div class="section">
+        <!--state, and zip code-->
+        <div class="section-state-zip">
             <label for="state-choice"></label>
-            <select aria-label="state-choice">
+            <select aria-label="state-choice" style="width: 40%;">
                 <option value="state">State</option>
                 <option value="AK">AK</option>
                 <option value="AL">AL</option>
@@ -124,12 +125,12 @@
             </select>
             <!--zip-->
             <label for="zip"></label>
-            <input type="number" placeholder="Zip" >
+            <input type="number" placeholder="Zip" style="width:40%" >
         </div>
         <br>
         <br>
         <!--email-->
-        <div class="section">
+        <div class="section-email">
             <label for="email">
                 <i class="fas">&#xf0e0;</i>
             </label>
@@ -137,11 +138,12 @@
         </div>
         <br>
         <br>
-        <div class="section">
+        <!--birthday-->
+        <div class="section-birthday">
             <label for="birthday">
                 <i class='fas'>&#xf1fd;</i>
             </label>
-            <input type="date">
+            <input type="date" id="date">
         </div>
     </article>
 </body>

@@ -14,13 +14,51 @@
         display: flex;
         flex-direction: column;
     }
-
-    .section:first-child, .section:last-child{
-            display: grid;
-            grid-template-columns: 10% 90%;
-            column-gap: 0.25rem; 
-        }
-
+    div { align-items: center; }
+    input#name, input#address, input#date{
+        background-color:hsl(0, 0%, 90%);
+        border-top: none;
+        border-left: none;
+        border-right:none;
+        
+    }
+    
+    select, input { 
+        height: 5rem; 
+        border-radius: 0.5rem;
+        border: 1px solid black;
+    }
+    .section-name, .section-address, .section-email, .section-birthday{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        column-gap: 0.25rem;
+        height: 3.5rem;
+    }
+    .section-phone {
+        display: grid;
+        grid-template-columns: 10% 57% 30%;
+        grid-column-gap: .5rem;
+        height: 3.5rem;
+    }
+    .section-city {
+        display: grid;
+        padding-left: inherit;
+        height: 3.5rem;
+    }
+    .section-state-zip {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        column-gap:1.5rem;
+        height: 3.5rem;
+    }
+    select:nth-child(2) {
+        background-color:hsl(0, 0%, 90%);
+        border-top: none;
+        border-left: none;
+        border-right:none;
+    }
+    .section-state-zip:nth-child(2), .section-state-zip:last-child { width: 40%; }
     .header h1{
         font-size: 2.5rem;
         margin: 0;
